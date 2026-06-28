@@ -17,8 +17,7 @@ An AI-powered Laundry Order and Pickup Management System built with Laravel.
 - PHP 8
 - MySQL
 - HTML/CSS
-- JavaScript
-- Vite
+
 
 ## Author
 
