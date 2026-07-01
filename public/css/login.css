@@ -228,3 +228,14 @@ button:hover {
     font-size: 14px;
     opacity: .9;
 }
+
+
+.alert-error{
+    background:#ffe5e5;
+    color:#c62828;
+    
+    padding:2px;
+    border-radius:3px;
+    margin-bottom:3px;
+    font-weight:600;
+}

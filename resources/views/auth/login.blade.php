@@ -73,12 +73,18 @@
             </div>
 
 
+            @if ($errors->any())
+                <div class="alert-error">
+                    {{ $errors->first() }}
+                </div>
+            @endif
+
             <form method="POST" action="/login">
                 @csrf
 
                 <div class="form-group">
                     <label>Email address</label>
-                    <input type="email" name="email" placeholder="you@email.com">
+                    <input type="email" name="email" value="{{ old('email') }}" placeholder="you@email.com">
                 </div>
 
                 <div class="form-group">
