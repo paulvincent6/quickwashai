@@ -17,6 +17,13 @@ class AuthController extends Controller
             'password' => 'required|min:6|confirmed',
         ]);
 
-        dd('Validation passed!');
+       User::create([
+            'name' => $request->name,
+            'phone' => $request->phone,
+            'email' => $request->email,
+            'password' => $request->password,
+        ]);
+
+        return "User registered successfully!";
     }
 }
